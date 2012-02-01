@@ -1,0 +1,10 @@
+<?php
+	class Instagram
+	{
+		public 	$api_uri		=	'https://api.instagram.com/v1/media/popular?';
+		public 	$client_id		=	'client_id=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx';
+
+		public function res_uri()	{
+			return $this->api_uri . $this->client_id;
+		}
+	}

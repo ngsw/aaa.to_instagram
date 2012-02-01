@@ -1,0 +1,55 @@
+* {
+ margin:0;
+ padding:0;
+}
+
+body {
+/* width:1880px;*/
+
+/* sky blue */
+ background:#9CA7E2; 
+ min-width:880px;
+ text-align: center; 
+}
+
+.picture {
+  float:left;
+}
+
+#wrapper {
+ width:100%;
+ float:right;
+}
+
+#header {
+/* KINAKA */
+ background:#FF4F19; 
+ height:100px;
+ width:1040px;
+}
+
+#boxLeft {
+ background:#FF8227;
+ width:20%;
+ float:left;
+}
+
+#boxCenter {
+ width:1100px;
+ float:left;
+}
+
+
+#boxRight {
+ width:100px;
+ float:right;
+ position:relative;
+}
+
+
+#boxFooter {
+ background:#2FFF71;
+ clear:right;
+ position:relative;
+ width:1100px;
+}

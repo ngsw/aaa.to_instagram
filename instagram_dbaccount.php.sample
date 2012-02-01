@@ -1,0 +1,7 @@
+<?php
+$CONF['dbhost']  = 'localhost';
+$CONF['dbname']  = 'mydbname';
+$CONF['dbuser']  = 'mydbuser';
+$CONF['dbpass']  = 'mydbpassword';
+$CONF['dbport']  = '3306';
+$CONF['dbtable'] = 'instagram';
