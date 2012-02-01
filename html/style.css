@@ -23,8 +23,8 @@ body {
 
 #header {
 /* KINAKA */
- background:#FF4F19; 
- height:100px;
+/* background:#FF4F19; */
+ height:100px; *
  width:1040px;
 }
 
@@ -35,7 +35,7 @@ body {
 }
 
 #boxCenter {
- width:1100px;
+ width:1040px;
  float:left;
 }
 
@@ -51,5 +51,5 @@ body {
  background:#2FFF71;
  clear:right;
  position:relative;
- width:1100px;
+ width:1040px;
 }

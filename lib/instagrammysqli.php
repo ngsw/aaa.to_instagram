@@ -158,6 +158,7 @@ echo <<<HTMLFOOTER
   </div><!-- wrapper -->
   <div id="boxFooter">
   <a href="https://twitter.com/#!/ngsw">@ngsw</a>
+  <a href="https://github.com/ngsw/aaa.to_instagram">ngsw/aaa.to_instagram - GitHub</a>
   <!-- えんじんえっくす まいしーくぇる ぺちぺー and Instagr.am --> 
   </div>
   </body>
