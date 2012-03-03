@@ -80,7 +80,8 @@ class InstagramMySQLi extends MySQLi
         $b=$a++ ;
  echo <<<HTMLEOF
 
-   <p class="picture">
+<!--   <p class="picture"> -->
+   <p class="span"> 
       <a href='$link' target="_blank">
         <img src='$url'
            width="260"
@@ -122,7 +123,8 @@ echo <<<HTMLHEADER
     <meta content="text/css" http-equiv="Content-Style-Type">
     <meta content="text/javascript" http-equiv="Content-Script-Type">
     <title>CloudCloudCloud</title>
-    <link href="/style.css" rel="stylesheet" type="text/css">
+<!--    <link href="/style.css" rel="stylesheet" type="text/css"> -->
+    <link href="/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css"> 
     <link href="/cat/favicon.ico" rel="shortcut icon">
   </head>
   <script type="text/javascript" src="jquery.js"></script>
@@ -131,10 +133,14 @@ echo <<<HTMLHEADER
     var num = 0;
     var interval = 4000;
     setInterval(function(){
+/*      $(".picture:eq(" + num++  + ")").fadeOut("3500");
       $(".picture:eq(" + num++  + ")").fadeOut("3500");
       $(".picture:eq(" + num++  + ")").fadeOut("3500");
-      $(".picture:eq(" + num++  + ")").fadeOut("3500");
-      $(".picture:eq(" + num++  + ")").fadeOut("3500");
+      $(".picture:eq(" + num++  + ")").fadeOut("3500"); 
+ */
+      $(".span:eq(" + num++  + ")").fadeOut("3500");
+      $(".span:eq(" + num++  + ")").fadeOut("3500");
+      $(".span:eq(" + num++  + ")").fadeOut("3500"); 
       if( num >=  $numdisplay ){ window.location.reload();} 
     },interval);
   });
