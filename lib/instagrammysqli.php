@@ -80,7 +80,6 @@ class InstagramMySQLi extends MySQLi
         $b=$a++ ;
  echo <<<HTMLEOF
 
-<!--   <p class="picture"> -->
    <p class="span"> 
       <a href='$link' target="_blank">
         <img src='$url'
@@ -123,7 +122,6 @@ echo <<<HTMLHEADER
     <meta content="text/css" http-equiv="Content-Style-Type">
     <meta content="text/javascript" http-equiv="Content-Script-Type">
     <title>CloudCloudCloud</title>
-<!--    <link href="/style.css" rel="stylesheet" type="text/css"> -->
     <link href="/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css"> 
     <link href="/cat/favicon.ico" rel="shortcut icon">
   </head>
@@ -133,11 +131,6 @@ echo <<<HTMLHEADER
     var num = 0;
     var interval = 4000;
     setInterval(function(){
-/*      $(".picture:eq(" + num++  + ")").fadeOut("3500");
-      $(".picture:eq(" + num++  + ")").fadeOut("3500");
-      $(".picture:eq(" + num++  + ")").fadeOut("3500");
-      $(".picture:eq(" + num++  + ")").fadeOut("3500"); 
- */
       $(".span:eq(" + num++  + ")").fadeOut("3500");
       $(".span:eq(" + num++  + ")").fadeOut("3500");
       $(".span:eq(" + num++  + ")").fadeOut("3500"); 
@@ -146,26 +139,24 @@ echo <<<HTMLHEADER
   });
 
   </script>
-  <body>
-  <div id="header">
+<body>
+  <div class="navbar-inner">
+    <div class="container">
+      <h1>Cloud! Cloud! Cloud!</h1>
+      <h2><a href="https://twitter.com/#!/ngsw">@ngsw</a></h2>
+      <h3><a href="https://github.com/ngsw/aaa.to_instagram">ngsw/aaa.to_instagram - GitHub</a></h3>
+    </div>
   </div>
-  <div id="wrapper">
-  <div id="boxLeft">
-  </div>
-  <div id="boxCenter"><!-- boxCenter -->
+  <div class="container">
+
 HTMLHEADER;
     }
 
     public function insta_footer(){
 echo <<<HTMLFOOTER
-  </div><!-- boxCenter -->
-  <div id="boxRight">
-  </div>
-  </div><!-- wrapper -->
-  <div id="boxFooter">
-    <a href="https://twitter.com/#!/ngsw">@ngsw</a><br \>
-    <a href="https://github.com/ngsw/aaa.to_instagram">ngsw/aaa.to_instagram - GitHub</a><br />
-  <!-- えんじんえっくす まいしーくぇる ぺちぺー and Instagr.am --> 
+  <footer class="footer">
+  <!-- えんじんえっくす まいしーくぇる ぺちぺー Instagr.am and Bootstrap from Twitter --> 
+  </footer>
   </div>
   </body>
 </html>

@@ -110,7 +110,7 @@ body {
   font-size: 13px;
   line-height: 18px;
   color: #333333;
-  background-color: #ffffff;
+  background-color: #F0F8FF;
 }
 a {
   color: #0088cc;
@@ -259,7 +259,7 @@ a:hover {
   width: 99.99999998999999%;
 }
 .container {
-  width: 940px;
+  width: 840px;
   margin-left: auto;
   margin-right: auto;
   *zoom: 1;
@@ -307,7 +307,7 @@ h5,
 h6 {
   margin: 0;
   font-weight: bold;
-  color: #333333;
+  color: #ff99cc;
   text-rendering: optimizelegibility;
 }
 h1 small,
@@ -2513,7 +2513,7 @@ button.btn.small, input[type="submit"].btn.small {
 .navbar .brand {
   float: left;
   display: block;
-  padding: 8px 20px 12px;
+  padding: 8px 20px 200px;
   margin-left: -20px;
   font-size: 20px;
   font-weight: 200;
