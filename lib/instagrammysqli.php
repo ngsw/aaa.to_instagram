@@ -67,6 +67,34 @@ class InstagramMySQLi extends MySQLi
       $stmt->close();
     }
 
+    public function insta_rand(){
+      $a = 0;
+      $i =  self::NUMBER_OF_DISPLAY;
+      //DEBUG
+      /*      $allsql = "SELECT * FROM instagram"; */
+      $sql = "SELECT * FROM instagram , (SELECT id FROM instagram  ORDER BY RAND() LIMIT 0, $i) AS SUB1 WHERE instagram.id = SUB1.id";
+      $stmt = $this->prepare( $sql );
+      $stmt->execute();
+      $stmt->bind_result( $id , $url , $alt , $link , $linkindex , $created_time , $_id);
+      while ( $stmt->fetch() ){
+        $b=$a++ ;
+ echo <<<HTMLEOF
+
+   <p class="span"> 
+      <a href='$link' target="_blank">
+        <img src='$url'
+           width="260"
+          height="260"
+             alt="$alt"
+           title="$created_time || $alt" />
+      </a>
+   </p>
+
+HTMLEOF;
+      }
+      $stmt->close();
+    }
+ 
     public function insta_views(){
       $a = 0;
       $i =  self::NUMBER_OF_DISPLAY;
